@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neotrack - Comparar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .comparison-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .comparison-item img {
+            width: 300px; /* Aumentado para igualar el tamaño anterior */
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+		.arrow {
+            font-size: 300%;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Neotrack<br><small>health &amp; care.</small></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="precompare.html" class="active">Comparar</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><a href="ajustes.html">Ajustes</a></li>
+            </ul>
+        </nav>
+        <div class="logo-right">
+            <img src="neotrack.png" alt="Neotrack Logo">
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="comparison-container">
+            <div class="imgplaceholder">
+                <img src="RM-T1-SE-Axial-Cerebro.gif" alt="Cerebro">
+            </div>
+            <div class="imgplaceholder">
+                <img src="comparativaD.png" alt="Comparación">
+            </div>
+            <div class="arrow">&gt;</div>
+        </div>
+    </section>
+</body>
+</html>

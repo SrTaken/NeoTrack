@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neotrack - Comparar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .comparison-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .comparison-item img {
+            width: 300px; /* Aumentado para igualar el tamaño anterior */
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            background-color: black;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .dot:nth-child(1) { animation-delay: -0.3s; }
+        .dot:nth-child(2) { animation-delay: -0.2s; }
+        .dot:nth-child(3) { animation-delay: -0.1s; }
+        .dot:nth-child(4) { animation-delay: 0s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+                opacity: 0.3;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .btn-comparar {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            background: linear-gradient(to right, #006d77, #83c5be);
+            border-radius: 30px;
+            transition: 0.3s;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-comparar:hover {
+            background: linear-gradient(to right, #83c5be, #006d77);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Neotrack<br><small>health &amp; care.</small></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="precompare.html" class="active">Comparar</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><a href="ajustes.html">Ajustes</a></li>
+            </ul>
+        </nav>
+        <div class="logo-right">
+            <img src="neotrack.png" alt="Neotrack Logo">
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="comparison-container">
+            <div class="imgplaceholder">
+                <img src="RM-T1-SE-Axial-Cerebro.gif" alt="Cerebro">
+            </div>
+            <div class="imgplaceholder">
+                <img src="comparativaD.png" alt="Comparación">
+            </div>
+        </div>
+        
+        <div class="loading-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <a href="postcompare.html"><button class="btn-iniciar">Comparando</button></a>
+    </section>
+</body>
+</html>
