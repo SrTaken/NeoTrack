@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neotrack - Comparar</title>
+    <title>Neotrack - Comparacion</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .comparison-container {
@@ -24,6 +24,24 @@
             font-size: 300%;
             font-weight: bold;
             color: black;
+        }
+		.arrow-button {
+            font-size: 300%;
+            font-weight: bold;
+            color: black;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+
+        .arrow-button:focus {
+            outline: none;
+        }
+
+        .arrow-button:hover {
+            color: #0056b3;
         }
     </style>
 </head>
@@ -53,7 +71,7 @@
             <div class="imgplaceholder">
                 <img src="comparativaD.png" alt="Comparación">
             </div>
-            <div class="arrow">&gt;</div>
+            <button class="arrow-button" onclick="window.location.href='compareFinal.html'">></button>
         </div>
     </section>
 </body>

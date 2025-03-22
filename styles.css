@@ -5,17 +5,18 @@
 }
 
 html, body {
-    height: 100vh; /* Mantiene la altura de la ventana */
+    height: 100vh; 
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Asegura que el header esté arriba */
+    flex-direction: column;
     font-size : 125%;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to top, white 0%, limegreen 100%);
+	background: linear-gradient(to bottom, white 0%, limegreen 100%);
+	background-attachment: fixed;
 }
 
 h1 {
@@ -139,6 +140,23 @@ nav ul li a.active {
     background: linear-gradient(to right, #006d77, #83c5be);
     border-radius: 30px;
     transition: 0.3s;
+}
+.btn-logout {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white; /* Texto blanco */
+    background: linear-gradient(to right, #ff4b5c, #ff7b8a); /* Colores de fondo en el gradiente */
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: linear-gradient(to right, #ff7b8a, #ff4b5c); /* Invertir los colores en el hover */
+    color: white; /* Asegurarse de que el texto se mantenga blanco */
 }
 
 .btn-iniciar:hover {

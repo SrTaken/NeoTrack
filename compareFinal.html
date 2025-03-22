@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neotrack - Comparacion</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .history-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .history-item .image-preview {
+			text-align: center; /* Centrar las imágenes dentro del contenedor */
+		}
+
+		.comparativa-img.first-img {
+			width: 300px; /* Mantener el tamaño de la primera imagen */
+		}
+
+		.history-item img {
+			width: 120px; /* Ajustar el tamaño de las imágenes de los items */
+			height: auto;
+			display: block;
+			margin: 0 auto; /* Centrar las imágenes de los items */
+		}
+
+        .history-item .text {
+            flex: 1;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            margin-right: 20px; /* Separación entre el texto y la flecha */
+        }
+        .history-item .case-title, .history-item .preview-text {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .comparativa-container {
+            display: flex;
+            flex-direction: row; /* Alinea la imagen y el texto en una fila */
+            align-items: center; /* Alinea verticalmente */
+            margin-bottom: 20px;
+        }
+        .comparativa-img {
+            width: 200px; /* Reduce el tamaño de la imagen */
+            height: auto;
+            display: block;
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+        }
+        .comparativa-text {
+            flex: 1; /* Ocupa el espacio restante */
+        }
+        .history-item .arrow {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+            margin-left: 20px; /* Añadir espacio entre la flecha y el borde derecho */
+            padding: 5px; /* Añadir padding para aumentar el área interactiva de la flecha */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Neotrack<br><small>health & care.</small></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="precompare.html" class="active">Comparar</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><a href="ajustes.html">Ajustes</a></li>
+            </ul>
+        </nav>
+        <div class="logo-right">
+            <img src="neotrack.png" alt="Neotrack Logo">
+        </div>
+    </header>
+
+    <section class="section1">
+        <div class="comparativa-container">
+			<div class="comparativa-img-container">
+				<img src="comparativaD.png" alt="Comparación" class="comparativa-img first-img"> <!-- Añadir la clase 'first-img' aquí -->
+				<p class="case-title"><strong>Caso nº0</strong></p> 
+			</div>
+			<div class="comparativa-text">
+				<p>LOE temporal derecha hiperintensa en las secuencias TR largo, con edema vasogénico secundario y realce heterogéneo con el contraste iv de gadolinio. Hallazgos compatibles con glioblastoma multiforme en paciente que debutó con crisis epilépticas</p>
+			</div>
+		</div>
+
+
+        <div class="history-item">
+            <div class="image-preview">
+                <img src="glioblastoma.jpg" alt="imagen">
+                <p class="preview-text">Previsualización de la imagen</p>
+            </div>
+            <div class="text">
+                <p>Pacientes con diagnóstico de glioblastoma: Se muestran masas tumorales con características similares a las de un glioblastoma. Se destacan cortes axiales en secuencias T1 y T2 con y sin gadolinio, evidenciando áreas de necrosis, edema vasogénico y realce heterogéneo.</p>
+            </div>
+            <span class="arrow">></span>
+        </div>
+
+        <div class="history-item">
+            <div class="image-preview">
+                <img src="leptomeníngeo.jpg" alt="imagen">
+                <p class="preview-text">Previsualización de la imagen</p>
+            </div>
+            <div class="text">
+                <p>Paciente con crisis de epilepsia aislada: Caso que aborda los cambios que ocurren tras una crisis epiléptica, incluyendo edema vasogénico y realce leptomeníngeo. Presenta énfasis en las alteraciones transitorias, proporcionando imágenes que pueden ser útiles para el diagnóstico diferencial.</p>
+            </div>
+            <span class="arrow">></span>
+        </div>
+
+        <div class="history-item">
+            <div class="image-preview">
+                <img src="cerebro.jpg" alt="imagen">
+                <p class="preview-text">Previsualización de la imagen</p>
+            </div>
+            <div class="text">
+                <p>Lesiones oncológicas intracraneales de apariencia quística: Imagen que describe diversas lesiones cerebrales, incluyendo el glioblastoma multiforme. A su vez esta presenta las características típicas de estas lesiones, como áreas de necrosis, hemorragia y neovascularización, con realce heterogéneo tras gadolinio y edema peritumoral.</p>
+            </div>
+            <span class="arrow">></span>
+        </div>
+
+        <div class="history-item">
+            <div class="image-preview">
+                <img src="cerebroconcosasraras.jpg" alt="imagen">
+                <p class="preview-text">Previsualización de la imagen</p>
+            </div>
+            <div class="text">
+                <p>Diagnóstico diferencial de lesiones cerebrales con realce en anillo en tomografía computada y resonancia magnética: Las imágenes del paciente presentan características de diversas lesiones cerebrales que presentan realce en anillo, incluyendo el glioblastoma multiforme.</p>
+            </div>
+            <span class="arrow">></span>
+        </div>
+    </section>
+</body>
+</html>
